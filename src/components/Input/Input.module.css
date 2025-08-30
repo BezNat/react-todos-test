@@ -1,0 +1,42 @@
+.inputSection {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.inputField{
+    max-height: 400px;
+    flex: auto;
+    padding: var(--spacing-m);
+    border: 1px solid var(--color-white);
+    border-radius: var(--radius-s);
+    font-size: var(--font-size-l);
+}
+
+.inputField:focus{
+    outline: none; 
+    border: none;
+}
+
+.inputField::placeholder{
+    font-style: italic;
+    color: var(--color-grey);
+    text-align: center;
+}
+
+.toggleAll {
+  background: none;
+  border: none;
+  color: var(--color-grey);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleAll:hover {
+  color: #424242;
+}

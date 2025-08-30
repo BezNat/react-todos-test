@@ -1,0 +1,9 @@
+.contentBox {
+    background: var(--color-white);
+    padding: var(--spacing-l);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+    display: grid;
+}
+
+

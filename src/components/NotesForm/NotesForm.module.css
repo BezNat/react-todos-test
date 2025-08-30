@@ -1,0 +1,73 @@
+.noteItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-grey);
+    transition: background-color 0.5s;
+    position: relative;
+}
+
+.noteItem:hover {
+    background-color: #fafafa;
+}
+
+.noteCheckbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--color-grey);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.noteCheckbox:hover {
+    border-color: var(--color-green);
+}
+
+.noteCheckbox.checked {
+    border-color: var(--color-green);
+}
+
+.noteCheckbox.checked::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.25rem;
+    border: 2px solid var(--color-green);
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.noteText {
+    flex:1;
+    padding-left: 1.5rem;
+    font-size: var(--font-size-l);
+    color: var(--color-text);
+}
+
+
+.noteText.completed {
+    text-decoration: line-through;
+    color: var(--color-grey);
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: var(--color-grey);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.noteItem:hover .deleteBtn {
+    opacity: 1;
+}
+
+.deleteBtn:hover {
+    color: var(--color-title);
+}

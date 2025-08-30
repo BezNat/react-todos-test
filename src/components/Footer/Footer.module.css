@@ -1,0 +1,58 @@
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-m);
+  color: var(--color-footer);
+  border-top: 1px solid #e0e0e0;
+}
+
+.itemsCount {
+  font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filterBtn {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #e0e0e0;
+  background: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: var(--color-footer);
+  transition: all 0.2s;
+  font-size: var(--font-size-m);
+}
+
+.filterBtn:hover {
+  background-color: #f5f5f5;
+}
+
+.filterBtn.active {
+  background-color: #eeeeee;
+  border-color: 2px var(--color-title);
+  color: var(--color-footer);
+}
+
+.clearBtn {
+  background: none;
+  font-size: var(--font-size-m);
+  border: none;
+  color: var(--color-footer);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clearBtn:hover {
+  color: #212121;
+}
+
+.clearBtn:disabled {
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+
